@@ -4,6 +4,11 @@
       "targets": {
         "node": "current"
       }
+    }], "stage-3"
+  ],
+  "plugins": [
+    ["transform-react-jsx", {
+      "pragma": "tag"
     }]
   ]
 }
