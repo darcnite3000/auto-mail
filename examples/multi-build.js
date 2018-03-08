@@ -1,11 +1,12 @@
-const {
+import {
   td,
   table,
   text,
   img
-} = require('../lib/tags')
+} from '../lib/tags'
 
-module.exports = {
+
+export const config = {
   templates: ['src/template.html'],
   defaults: {
     root: 'http://whatever.com/',
@@ -24,14 +25,14 @@ module.exports = {
         versions: [1, 2, 3]
       },
       content: table({
-        style: 'background-color:pink;',
-        columns: true
-      }, [
+          style: 'background-color:pink;',
+          columns: true
+        },
         img({
           linkWrap: true
         }, 'foo'),
-        td({}, [text('foo'), text('bar')])
-      ])
+        td({}, text('foo'), text('bar'))
+      )
     },
     {
       options: {
