@@ -1,0 +1,24 @@
+{
+  "name": "auto-mail",
+  "version": "2.0.0",
+  "description": "tool to create mailers",
+  "main": "index.js",
+  "author": "Tristan Smith",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf dist && mkdir dist",
+    "build": "node index.js",
+    "server": "node server.js",
+    "start": "concurrently 'yarn watch' 'yarn server'",
+    "watch": "yarn clean && watch 'yarn build' src"
+  },
+  "dependencies": {
+    "yargs": "^11.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "2.23.6",
+    "concurrently": "3.5.1",
+    "rimraf": "2.6.2",
+    "watch": "1.0.2"
+  }
+}
