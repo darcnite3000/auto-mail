@@ -22,7 +22,8 @@ deletes and remakes the `dist` directory
 
 #### `yarn build`
 runs the root building script.
-can take a `--config` argument to designate the location of the config file
+can take a `--config` argument to designate the location of the config file.
+
 **NB:** this assumes that the `dist` directory exists
 
 #### `yarn server`
