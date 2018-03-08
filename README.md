@@ -14,6 +14,8 @@ This version of Auto-Mail uses a `config.js` instead of json an uses functional 
 
 3. `yarn start` to fire up a watch instance that rebuilds the emails on change for files in the `src` directory, and also a browser-sync server that watches for changes in the dist folder
 
+see the [wiki](https://github.com/darcnite3000/auto-mail/wiki) for an example and api docs
+
 # Other Yarn tasks
 #### `yarn clean`
 deletes and remakes the `dist` directory
@@ -28,5 +30,3 @@ starts up a _browser-sync_ server looking at the html files in the `dist` direct
 
 #### `yarn watch`
 runs the `yarn clean` task then uses _watch_ to run the `yarn build` task when anything changes in the `src` directory
-
-see the [wiki](https://github.com/darcnite3000/auto-mail/wiki) for an example and api docs
