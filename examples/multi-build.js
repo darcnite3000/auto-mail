@@ -1,5 +1,9 @@
-const { td, table, text, img } = require('../tags')
-const { gbLink } = require('../utils')
+const {
+  td,
+  table,
+  text,
+  img
+} = require('../lib/tags')
 
 module.exports = {
   templates: ['src/template.html'],
@@ -12,24 +16,33 @@ module.exports = {
     versions: [],
     template: 0
   },
-  builds: [
-    {
+  builds: [{
       options: {
         root: '',
         name: 'bar',
-        link: gbLink(188),
+        link: 'http://test.com',
         versions: [1, 2, 3]
       },
-      content: table({ style: 'background-color:pink;', columns: true }, [
-        img({ linkWrap: true }, 'foo'),
+      content: table({
+        style: 'background-color:pink;',
+        columns: true
+      }, [
+        img({
+          linkWrap: true
+        }, 'foo'),
         td({}, [text('foo'), text('bar')])
       ])
     },
     {
-      options: { name: 'baz' },
-      content: table(
-        { style: 'background-color:pink;' },
-        td({}, img({}, 'bar', { alt: 'foo bar baz' }))
+      options: {
+        name: 'baz'
+      },
+      content: table({
+          style: 'background-color:pink;'
+        },
+        td({}, img({}, 'bar', {
+          alt: 'foo bar baz'
+        }))
       )
     }
   ]
