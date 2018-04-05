@@ -1,5 +1,6 @@
 #auto-mail
 src/config.js
+src/config.jsx
 src/helpers.js
 dist/
 
