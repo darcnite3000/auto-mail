@@ -1,14 +1,21 @@
 {
   "presets": [
-    ["env", {
-      "targets": {
-        "node": "current"
+    [
+      "env",
+      {
+        "targets": {
+          "node": "current"
+        }
       }
-    }], "stage-3"
+    ],
+    "stage-3"
   ],
   "plugins": [
-    ["transform-react-jsx", {
-      "pragma": "tag"
-    }]
+    [
+      "transform-react-jsx",
+      {
+        "pragma": "Tag"
+      }
+    ]
   ]
 }
