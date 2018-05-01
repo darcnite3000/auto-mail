@@ -6,7 +6,7 @@ The original version of Auto-Mail would run given an input `config.json`, this h
 
 This version of Auto-Mail uses a `config.js` instead of json an uses functional components which follow the form of `() => options => other(options)` or `() => options => 'output'` allowing for the current build setup to be passed in. Being a javascript config allows me to create meta functions to wrap the available tag functions to stop heavy duplication within the build config (see [Wrapping Tags](https://github.com/darcnite3000/auto-mail/wiki/Wrapping-Tags,-or-Higher-Order-Tags)).
 
-Auto-Mail is configured to allow for the use of JSX using the [`tag`](https://github.com/darcnite3000/auto-mail/wiki/Tags-Library#tag) function from the Tag Library as a pragma. 
+Auto-Mail is configured to allow for the use of JSX using the [`Tag`](https://github.com/darcnite3000/auto-mail/wiki/Tags-Library#tag) function from the Tag Library as a pragma. 
 
 **NOTE:** Auto-Mail is not a dom library, it's designed for building a string to place in an email given a list of options, any mistakes in output are caused by mistakes in input.
 
